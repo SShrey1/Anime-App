@@ -7,6 +7,15 @@
 
 import UIKit
 
-class PotraitCollectionViewCell: UICollectionViewCell {
+final class PotraitCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var cellImageView: UIImageView!
+    
+    @IBOutlet weak var cellTitleLabel: UILabel!
+    
+    func setup(_ item : ListItem){
+        cellImageView.image = UIImage(named: item.image)
+        cellTitleLabel.text = item.title
+    }
 }

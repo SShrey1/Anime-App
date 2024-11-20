@@ -9,7 +9,10 @@ import UIKit
 
 class CollectionViewHeaderReusableView: UICollectionReusableView {
     
-    func setup(_ item : String){
+    
+    @IBOutlet weak var cellTitleLabel: UILabel!
+    
+    func setup(_ title : String){
         cellTitleLabel.text = title
     }
         
